@@ -22,11 +22,18 @@ body
 
 .wrapper
 	height: 100vh
+	min-height: 640px
 	width: 100vw
 	background-size: cover
 	background-position: center
 	position: relative
 	padding: 40px
+	@media #{$medium-only}
+		padding: 20px
+	@media #{$small-only}
+		padding: 10px
+	@media only screen and (max-width: 640px) and (orientation: landscape)
+		min-height: 800px
 	.image-background
 		background-size: cover
 		background-position: center
@@ -144,7 +151,12 @@ body
 		.left-container
 			text-align: center
 			.logo
-				margin-bottom: 30px
+				margin: 0 auto 30px
+				width: 270px
+				height: 115px
+				@media #{$small-only}
+					width: 225px
+					height: 95px
 			p
 				color: #fff
 				font-weight: 300
@@ -173,3 +185,5 @@ body
 					span
 						margin-left: 20px
 						letter-spacing: 0.03em
+						@media #{$small-only}
+							margin-left: 10px
