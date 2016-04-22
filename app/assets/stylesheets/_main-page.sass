@@ -22,7 +22,7 @@ body
 
 .wrapper
 	height: 100vh
-	min-height: 640px
+	min-height: 570px
 	width: 100vw
 	background-size: cover
 	background-position: center
@@ -60,9 +60,12 @@ body
 		line-height: 1.2em
 		@media #{$small-only}
 			font-size: 2em
-			margin-top: 50px
+			margin-top: 30px
 	.desktop
 		@media #{$small-only}
+			display: none
+	.mobile
+		@media #{$medium-up}
 			display: none
 	.subtitle
 		font-size: 1.125em
@@ -157,6 +160,7 @@ body
 				@media #{$small-only}
 					width: 225px
 					height: 95px
+					margin: 0 auto 10px
 			p
 				color: #fff
 				font-weight: 300
