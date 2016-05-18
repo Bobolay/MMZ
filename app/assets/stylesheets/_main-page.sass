@@ -208,6 +208,12 @@ body
 							font-size: 0.875em
 						@media only screen and (max-width: 320px)
 							font-size: 0.675em
+					.underlined
+						border-bottom: 1px solid $orange
+						cursor: pointer
+						+transition(0.25s)
+						&:hover
+							color: $orange
 					.mobile
 						display: inline-block
 						@media #{$medium-up}
