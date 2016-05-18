@@ -209,9 +209,18 @@ body
 						@media only screen and (max-width: 320px)
 							font-size: 0.675em
 					.underlined
+						color: #fff
+						text-decoration: none
 						border-bottom: 1px solid $orange
 						cursor: pointer
 						+transition(0.25s)
+						margin-left: 20px
+						letter-spacing: 0.03em
+						@media #{$small-only}
+							margin-left: 10px
+							font-size: 0.875em
+						@media only screen and (max-width: 320px)
+							font-size: 0.675em
 						&:hover
 							color: $orange
 					.mobile
